@@ -14,4 +14,4 @@
         | <strCheckEndTitle>  |
       Examples:
         | strFirstName | strLastName | strEmail         | strBirthMonth | strBirthDay | strBirthYear | strCity     | strZIP | strCountry | strDevComputer | strDevVersion     | strDevLanguage |  strDevMobile | strDevModel     | strDevOs     | strPassword    | strConfirmPassword | strCheckEndTitle  |
-        | Daniel       | Caballero   | dani223@gnx.com  | July          | 19          | 1990         | Panama City | 507    | Panama     |   Windows      |  Windows 10 Home  |  Spanish       |   Samsung     |  Galaxy S10 5G  |  Android 11  |  bGi9h*iDG9yP  |  bGi9h*iDG9yP      | Complete Setup    |
+        | Daniel       | Caballero   | dani2233@gnx.com  | July          | 19          | 1990         | Panama City | 507    | Panama     |   Windows      |  Windows 10 Home  |  Spanish       |   Samsung     |  Galaxy S10 5G  |  Android 11  |  bGi9h*iDG9yP  |  bGi9h*iDG9yP      | Complete Setup    |

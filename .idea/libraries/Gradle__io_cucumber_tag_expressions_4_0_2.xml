@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:tag-expressions:4.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/tag-expressions/4.0.2/2d7dbdf38a436c83815c5005beba951dedfa78ba/tag-expressions-4.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/tag-expressions/4.0.2/c957659e3d45de7a6936fc8eb779ef5c463fb15b/tag-expressions-4.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:create-meta:6.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/create-meta/6.0.1/4c631e8d4628b7a27cf11c56c0b71c0d676e353e/create-meta-6.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/create-meta/6.0.1/f0539c7252398b9983b8a2dd44e2ab4a49533047/create-meta-6.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

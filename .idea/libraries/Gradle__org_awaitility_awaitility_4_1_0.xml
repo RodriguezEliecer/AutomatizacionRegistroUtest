@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.awaitility:awaitility:4.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.1.0/621a48e5366758e1e13fb1837c23edb44ce7ff8f/awaitility-4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.1.0/3e53358883503c15dac1214726ac180ca0299b1b/awaitility-4.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

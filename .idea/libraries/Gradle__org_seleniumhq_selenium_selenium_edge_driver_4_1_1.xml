@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.seleniumhq.selenium:selenium-edge-driver:4.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-edge-driver/4.1.1/7c2329a986ee32153d0a9fbe0b7f3bd5e5ee417c/selenium-edge-driver-4.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-edge-driver/4.1.1/2eafbbad545f065fc0fcfcac31b26e7a8f2915bd/selenium-edge-driver-4.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

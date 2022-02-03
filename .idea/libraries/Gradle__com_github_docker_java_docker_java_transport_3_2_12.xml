@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.docker-java:docker-java-transport:3.2.12">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-transport/3.2.12/88ad0cd6d67c075a5f622dbf7cb930ef4b1c008f/docker-java-transport-3.2.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-transport/3.2.12/1e65d0f0e9fffd5dfbb3d3651c2764aa5972a755/docker-java-transport-3.2.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
