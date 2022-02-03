@@ -1,0 +1,47 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+buildscript {
+    repositories {
+
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.89")
+    }
+}
+ext{
+    serenityVersion = '3.1.13'
+    serenityCucumberVersion = '3.1.13'
+
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.32'
+    testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+
+    testImplementation  'net.serenity-bdd:serenity-core:2.0.64'
+                        'net.serenity-bdd:serenity-junit:2.0.64'
+                        'net.serenity-bdd:serenity-cucumber:2.0.19'
+}
+
+compileJava.options.encoding= 'UTF-8'
+tasks.withType(JavaCompile){
+    options.encoding('UTF-8')
+}
+
+gradle.startParameter.continueOnFailure = true

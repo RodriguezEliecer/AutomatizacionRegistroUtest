@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="32d4e5b7f8a0cbb06b47b6a67f5a999461264326abcf572f5bdabd372687bb1e.html">Go To The Page Of Utest.Com And Proceed To Create A New User.</a></span>
+                > <span class="truncate-60"><a
+                    href="e29e137c3adf11c1083be75ceb2fed3646129bb93cdc28977297adfce08590e3.html">Successfully create a new user </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 03-02-2022 14:06</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Go To The Page Of Utest.Com And Proceed To Create A New User. </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="ff1312023d39bfe017bf1cfa7eee688f5343ffeb07241e1c0d6e56a450ede02c.html">
+                                    (Scenario)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Successfully create a new user
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given he user accessed the url and selected JOIN TODAY<br>When enter the information required by the form<br><table class='embedded'><thead><th>strFirstName</th><th>strLastName</th><th>strEmail</th><th>strBirthMonth</th><th>strBirthDay</th><th>strBirthYear</th><th>strCity</th><th>strZIP</th><th>strCountry</th><th>strDevComputer</th><th>strDevVersion</th><th>strDevLanguage</th><th>strDevMobile</th><th>strDevModel</th><th>strDevOs</th><th>strPassword</th><th>strConfirmPassword</th></thead><tbody><tr><td>&lt;strFirstName&gt;</td><td>&lt;strLastName&gt;</td><td>&lt;strEmail&gt;</td><td>&lt;strBirthMonth&gt;</td><td>&lt;strBirthDay&gt;</td><td>&lt;strBirthYear&gt;</td><td>&lt;strCity&gt;</td><td>&lt;strZIP&gt;</td><td>&lt;strCountry&gt;</td><td>&lt;strDevComputer&gt;</td><td>&lt;strDevVersion&gt;</td><td>&lt;strDevLanguage&gt;</td><td>&lt;strDevMobile&gt;</td><td>&lt;strDevModel&gt;</td><td>&lt;strDevOs&gt;</td><td>&lt;strPassword&gt;</td><td>&lt;strConfirmPassword&gt;</td></tr></tbody></table><br>Then registration was successful<br><table class='embedded'><tbody><tr><td>strCheckEndTitle</td></tr><tr><td>&lt;strCheckEndTitle&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="adfb8730cd2274546a1629569a6032ade0eb61a3c868aea9654145e3c7f56bfc.png" title=" 1: Successfully create a new user ({strFirstName=Juan, strLastName=Caballero, strEmail=juan223@gnx.com, strBirthMonth=July, strBirthDay=19, strBirthYear=1990, strCity=Panama City, strZIP=507, strCountry=Panama, strDevComputer=Windows, strDevVersion=Windows 10 Home, strDevLanguage=Spanish, strDevMobile=Samsung, strDevModel=Galaxy S10 5G, strDevOs=Android 11, strPassword=bGi9h*iDG9yP, strConfirmPassword=bGi9h*iDG9yP, strCheckEndTitle=Complete Setup})" width="1295"/>
+                <img src="adfb8730cd2274546a1629569a6032ade0eb61a3c868aea9654145e3c7f56bfc.png" title=" Given he user accessed the url and selected JOIN TODAY" width="1295"/>
+                <img src="adfb8730cd2274546a1629569a6032ade0eb61a3c868aea9654145e3c7f56bfc.png" title=" Daniel open up the register page" width="1295"/>
+                <img src="adfb8730cd2274546a1629569a6032ade0eb61a3c868aea9654145e3c7f56bfc.png" title=" Daniel opens the Open up the register page" width="1295"/>
+                <img src="adfb8730cd2274546a1629569a6032ade0eb61a3c868aea9654145e3c7f56bfc.png" title=" Daniel clicks on Boton ir a pagina registro" width="1295"/>
+                <img src="fcafcf6f4433370daa15a8a5d8493dd5f39f643155248f71e88347883da70c01.png" title=" Daniel clicks on Boton ir a pagina registro (completed)" width="1295"/>
+                <img src="fcafcf6f4433370daa15a8a5d8493dd5f39f643155248f71e88347883da70c01.png" title=" Daniel open up the register page (completed)" width="1295"/>
+                <img src="b4f94935e8484bbbe0e327a33b099287f6ce043f2f8784549f650c28e861328c.png" title=" Given he user accessed the url and selected JOIN TODAY (completed)" width="1295"/>
+                <img src="b4f94935e8484bbbe0e327a33b099287f6ce043f2f8784549f650c28e861328c.png" title=" When enter the information required by the form
+| strFirstName | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strZIP | strCountry | strDevComputer | strDevVersion | strDevLanguage | strDevMobile | strDevModel | strDevOs | strPassword | strConfirmPassword |
+| Juan | Caballero | juan223@gnx.com | July | 19 | 1990 | Panama City | 507 | Panama | Windows | Windows 10 Home | Spanish | Samsung | Galaxy S10 5G | Android 11 | bGi9h*iDG9yP | bGi9h*iDG9yP |" width="1295"/>
+                <img src="f182e2ecae45967aff8935d3ad8e4aa41c0d42126a3710e0635f6e029fd72a4f.png" title=" Daniel fill out personal data" width="1295"/>
+                <img src="b4f94935e8484bbbe0e327a33b099287f6ce043f2f8784549f650c28e861328c.png" title=" Daniel enters 'Juan' into Input Nombre del Usuario" width="1295"/>
+                <img src="3b857aba30e9c93377caa8ec058578c3cccab2de8b31dbd27c28842960bcea07.png" title=" Daniel enters 'Juan' into Input Nombre del Usuario (completed)" width="1295"/>
+                <img src="3b857aba30e9c93377caa8ec058578c3cccab2de8b31dbd27c28842960bcea07.png" title=" Daniel enters 'Caballero' into Input Apellido del Usuario" width="1295"/>
+                <img src="9cc64303613b267e4013c5f365a3af7ab9c986fcc25ef7896294ae3e792a8652.png" title=" Daniel enters 'Caballero' into Input Apellido del Usuario (completed)" width="1295"/>
+                <img src="9cc64303613b267e4013c5f365a3af7ab9c986fcc25ef7896294ae3e792a8652.png" title=" Daniel enters 'juan223@gnx.com' into Input Correo del Usuario" width="1295"/>
+                <img src="8f5c14117dcf8a9b87ce1430710e9226823d4fcd91bc3e89c2806646a466c0df.png" title=" Daniel enters 'juan223@gnx.com' into Input Correo del Usuario (completed)" width="1295"/>
+                <img src="8f5c14117dcf8a9b87ce1430710e9226823d4fcd91bc3e89c2806646a466c0df.png" title=" Daniel selects July on Input Mes de Nacimiento del Usuario" width="1295"/>
+                <img src="9340ffa4c6040108a84cb671c1a5c967deb1abe3a2d4f288c2f0c6144de26cfe.png" title=" Daniel selects July on Input Mes de Nacimiento del Usuario (completed)" width="1295"/>
+                <img src="9340ffa4c6040108a84cb671c1a5c967deb1abe3a2d4f288c2f0c6144de26cfe.png" title=" Daniel selects 19 on Input Dia de Nacimiento del Usuario" width="1295"/>
+                <img src="e61b72e250b2058ac87044da915285b04b3406a156b0598d932af4c9716cb9da.png" title=" Daniel selects 19 on Input Dia de Nacimiento del Usuario (completed)" width="1295"/>
+                <img src="e61b72e250b2058ac87044da915285b04b3406a156b0598d932af4c9716cb9da.png" title=" Daniel selects 1990 on Input Anio de Nacimeito del Usuario" width="1295"/>
+                <img src="fd92e231f018f6870de35cf75d087d8a51cffa151b920f3eab5b1c26d5b21ebd.png" title=" Daniel selects 1990 on Input Anio de Nacimeito del Usuario (completed)" width="1295"/>
+                <img src="fd92e231f018f6870de35cf75d087d8a51cffa151b920f3eab5b1c26d5b21ebd.png" title=" Daniel clicks on Boton Siguiente del formulario" width="1295"/>
+                <img src="5d7ea2ba289d1ad08fef6fff7d278e55c1674cdcd593a73a9a1573a1363940a2.png" title=" Daniel clicks on Boton Siguiente del formulario (completed)" width="1295"/>
+                <img src="5d7ea2ba289d1ad08fef6fff7d278e55c1674cdcd593a73a9a1573a1363940a2.png" title=" Daniel fill out personal data (completed)" width="1295"/>
+                <img src="1dd08deb4f4ec20ce4eb8eb141e6890dd50381c85fe3f9f0b8c6961916bfcf55.png" title=" Daniel fill out location data" width="1295"/>
+                <img src="353e9faf665fc27cc374e1261ebcfeffecb9fb91d325d19475cf1d5ac50e6b3d.png" title=" Daniel enters 'Panama City' into City" width="1295"/>
+                <img src="f80ea484978321f36c38923c6fe1cd31bbbecaf0a7c416c3d2e8beb058cb13c8.png" title=" Daniel enters 'Panama City' into City (completed)" width="1295"/>
+                <img src="f80ea484978321f36c38923c6fe1cd31bbbecaf0a7c416c3d2e8beb058cb13c8.png" title=" Daniel types 'ARROW_DOWN' in City" width="1295"/>
+                <img src="f2eb78d021611c4dd5b23ecaed5b243d89374d85b832a2a6af48d4010a889ec1.png" title=" Daniel types 'ARROW_DOWN' in City (completed)" width="1295"/>
+                <img src="f2eb78d021611c4dd5b23ecaed5b243d89374d85b832a2a6af48d4010a889ec1.png" title=" Daniel types 'ARROW_DOWN' in City" width="1295"/>
+                <img src="298e35e1f1a8db6d57759467d63a55a2b263835da5d788dff28f689a874ae04c.png" title=" Daniel types 'ARROW_DOWN' in City (completed)" width="1295"/>
+                <img src="298e35e1f1a8db6d57759467d63a55a2b263835da5d788dff28f689a874ae04c.png" title=" Daniel types 'ARROW_DOWN' in City" width="1295"/>
+                <img src="73c14ac5626b2ec9c6d17b1f9861bd977558a74cc85221b9520c14e0136ecae5.png" title=" Daniel types 'ARROW_DOWN' in City (completed)" width="1295"/>
+                <img src="73c14ac5626b2ec9c6d17b1f9861bd977558a74cc85221b9520c14e0136ecae5.png" title=" Daniel types 'ENTER' in City" width="1295"/>
+                <img src="888d4bba580944e84b6094c007e3207ae441c79f16c702da667ce12016c11240.png" title=" Daniel types 'ENTER' in City (completed)" width="1295"/>
+                <img src="888d4bba580944e84b6094c007e3207ae441c79f16c702da667ce12016c11240.png" title=" Daniel enters '507' into ZIP" width="1295"/>
+                <img src="91b1522abbf01557e2ce9c0e19e2203a5048401fdbba25ed7125c13b91c941bb.png" title=" Daniel enters '507' into ZIP (completed)" width="1295"/>
+                <img src="91b1522abbf01557e2ce9c0e19e2203a5048401fdbba25ed7125c13b91c941bb.png" title=" Daniel clicks on Div Country" width="1295"/>
+                <img src="dd53b08ea0aa767c467e16c49047699bdfaf18f3a42e3d34606015d7db2dd76e.png" title=" Daniel clicks on Div Country (completed)" width="1295"/>
+                <img src="dd53b08ea0aa767c467e16c49047699bdfaf18f3a42e3d34606015d7db2dd76e.png" title=" Daniel enters 'Panama' into Country" width="1295"/>
+                <img src="01f23dd91d4b9e6ecb258da0485be7d6c4dc0cc97396cb157fb87cec6c3b1704.png" title=" Daniel enters 'Panama' into Country (completed)" width="1295"/>
+                <img src="01f23dd91d4b9e6ecb258da0485be7d6c4dc0cc97396cb157fb87cec6c3b1704.png" title=" Daniel clicks on Boton ir a los siguientes campos " width="1295"/>
+                <img src="d1d15753d957a3214e208e0a9985cf3b15924f0becd685414790a0f2649b3741.png" title=" Daniel clicks on Boton ir a los siguientes campos  (completed)" width="1295"/>
+                <img src="d1d15753d957a3214e208e0a9985cf3b15924f0becd685414790a0f2649b3741.png" title=" Daniel fill out location data (completed)" width="1295"/>
+                <img src="d3b5b595ef446c0d3bcdd1282bb8783325ddbf08dd7aada20d2d83f1fc806bc8.png" title=" Daniel fill out devices data" width="1295"/>
+                <img src="d3b5b595ef446c0d3bcdd1282bb8783325ddbf08dd7aada20d2d83f1fc806bc8.png" title=" Daniel clicks on DIV MOBILE" width="1295"/>
+                <img src="cff9d0dd96c8b9c3462862faab88151decb4d68b311e53c4008238b556d0e6c8.png" title=" Daniel clicks on DIV MOBILE (completed)" width="1295"/>
+                <img src="cff9d0dd96c8b9c3462862faab88151decb4d68b311e53c4008238b556d0e6c8.png" title=" Daniel enters 'Windows' into INPUT MOBILE" width="1295"/>
+                <img src="55a7d7de0ec6dcd9c4ef9b85243deefb62ed993f52bbaa68943183f42d1e2384.png" title=" Daniel enters 'Windows' into INPUT MOBILE (completed)" width="1295"/>
+                <img src="55a7d7de0ec6dcd9c4ef9b85243deefb62ed993f52bbaa68943183f42d1e2384.png" title=" Daniel types 'ARROW_DOWN' in INPUT MOBILE" width="1295"/>
+                <img src="65b8bc524e7df39bde2a4067fa4a14ede28301e625ffdca8cf084d3859d325d3.png" title=" Daniel types 'ARROW_DOWN' in INPUT MOBILE (completed)" width="1295"/>
+                <img src="65b8bc524e7df39bde2a4067fa4a14ede28301e625ffdca8cf084d3859d325d3.png" title=" Daniel types 'ENTER' in INPUT MOBILE" width="1295"/>
+                <img src="fcc4550d151ee2d69c260181ddd71e7972f29322579f05dd2e3ee9d477d2039d.png" title=" Daniel types 'ENTER' in INPUT MOBILE (completed)" width="1295"/>
+                <img src="fcc4550d151ee2d69c260181ddd71e7972f29322579f05dd2e3ee9d477d2039d.png" title=" Daniel clicks on DIV Version" width="1295"/>
+                <img src="696e51b3fbe6db995aac529c561420f6eb626395393d9471b662894c88df68ee.png" title=" Daniel clicks on DIV Version (completed)" width="1295"/>
+                <img src="696e51b3fbe6db995aac529c561420f6eb626395393d9471b662894c88df68ee.png" title=" Daniel enters 'Windows 10 Home' into INPUT Version" width="1295"/>
+                <img src="c8f94e28d930ad97cfbe909a2cffab291ab46fdc2cb690d6a6fc269602f38831.png" title=" Daniel enters 'Windows 10 Home' into INPUT Version (completed)" width="1295"/>
+                <img src="c8f94e28d930ad97cfbe909a2cffab291ab46fdc2cb690d6a6fc269602f38831.png" title=" Daniel types 'ARROW_DOWN' in INPUT Version" width="1295"/>
+                <img src="3adf95a33209e45185d19320dc7346e478a4174c3452680ccc7302e7f6ec9cff.png" title=" Daniel types 'ARROW_DOWN' in INPUT Version (completed)" width="1295"/>
+                <img src="3adf95a33209e45185d19320dc7346e478a4174c3452680ccc7302e7f6ec9cff.png" title=" Daniel types 'ENTER' in INPUT Version" width="1295"/>
+                <img src="57a6b5286826ddffd74c40a5a882b8ba7be18831f91f88a53567d73a92a48b3a.png" title=" Daniel types 'ENTER' in INPUT Version (completed)" width="1295"/>
+                <img src="57a6b5286826ddffd74c40a5a882b8ba7be18831f91f88a53567d73a92a48b3a.png" title=" Daniel clicks on DIV Language" width="1295"/>
+                <img src="c17de02d1497ca9fe053a61ed3b50d4ee390814114abfa6e9f76ed61223ec901.png" title=" Daniel clicks on DIV Language (completed)" width="1295"/>
+                <img src="c17de02d1497ca9fe053a61ed3b50d4ee390814114abfa6e9f76ed61223ec901.png" title=" Daniel enters 'Spanish' into INPUT OS" width="1295"/>
+                <img src="eb7a012ae29b1e9fe1068e79a09bd1d5e4fa161ac544c16d161739b7fac8d688.png" title=" Daniel enters 'Spanish' into INPUT OS (completed)" width="1295"/>
+                <img src="eb7a012ae29b1e9fe1068e79a09bd1d5e4fa161ac544c16d161739b7fac8d688.png" title=" Daniel types 'ARROW_DOWN' in INPUT OS" width="1295"/>
+                <img src="f93280c3c8f6d846d6609692e58c85cf3e482facf66ab061dc625b348bb6d01d.png" title=" Daniel types 'ARROW_DOWN' in INPUT OS (completed)" width="1295"/>
+                <img src="f93280c3c8f6d846d6609692e58c85cf3e482facf66ab061dc625b348bb6d01d.png" title=" Daniel types 'ENTER' in INPUT OS" width="1295"/>
+                <img src="5ff4a1997da107bdc2f69530c72eb432526c79b0a878c15fc5b6db8c9e83c702.png" title=" Daniel types 'ENTER' in INPUT OS (completed)" width="1295"/>
+                <img src="5ff4a1997da107bdc2f69530c72eb432526c79b0a878c15fc5b6db8c9e83c702.png" title=" Daniel clicks on DIV Mobile" width="1295"/>
+                <img src="7560663cdb512f5943d737901904d3a972842311a6de449214155a6ca5a4a7bf.png" title=" Daniel clicks on DIV Mobile (completed)" width="1295"/>
+                <img src="7560663cdb512f5943d737901904d3a972842311a6de449214155a6ca5a4a7bf.png" title=" Daniel enters 'Samsung' into INPUT Mobile" width="1295"/>
+                <img src="bfa585df3134bb95ee318e29b4eab45cddc09a1be2741eb938bc1dfcf7d4e8a3.png" title=" Daniel enters 'Samsung' into INPUT Mobile (completed)" width="1295"/>
+                <img src="bfa585df3134bb95ee318e29b4eab45cddc09a1be2741eb938bc1dfcf7d4e8a3.png" title=" Daniel types 'ARROW_DOWN' in INPUT Mobile" width="1295"/>
+                <img src="f1c2e34654e93d0c927aeeeef8a42b4b2d0c2cc078fcc109c42fb3aa75b6b78d.png" title=" Daniel types 'ARROW_DOWN' in INPUT Mobile (completed)" width="1295"/>
+                <img src="f1c2e34654e93d0c927aeeeef8a42b4b2d0c2cc078fcc109c42fb3aa75b6b78d.png" title=" Daniel types 'ENTER' in INPUT Mobile" width="1295"/>
+                <img src="c73ebd61d421e3ebfa85df665dd0cb977a14ac2453e90a59b82d0524907ffb9b.png" title=" Daniel types 'ENTER' in INPUT Mobile (completed)" width="1295"/>
+                <img src="c73ebd61d421e3ebfa85df665dd0cb977a14ac2453e90a59b82d0524907ffb9b.png" title=" Daniel clicks on DIV OS" width="1295"/>
+                <img src="792ad83162ef6f84ab4b2e18ca082ec516fa80ad8037e32b116a30e9749ecba4.png" title=" Daniel clicks on DIV OS (completed)" width="1295"/>
+                <img src="792ad83162ef6f84ab4b2e18ca082ec516fa80ad8037e32b116a30e9749ecba4.png" title=" Daniel enters 'Galaxy S10 5G' into INPUT OS" width="1295"/>
+                <img src="52da9ec5acdf4c06ce6ec004596f04349f67b96c303191b0a5254151f50c663e.png" title=" Daniel enters 'Galaxy S10 5G' into INPUT OS (completed)" width="1295"/>
+                <img src="52da9ec5acdf4c06ce6ec004596f04349f67b96c303191b0a5254151f50c663e.png" title=" Daniel types 'ARROW_DOWN' in INPUT OS" width="1295"/>
+                <img src="1149ed7f074e4cf747f5dea50b4fa5fa58df6673134cf9345922c1b789a04388.png" title=" Daniel types 'ARROW_DOWN' in INPUT OS (completed)" width="1295"/>
+                <img src="1149ed7f074e4cf747f5dea50b4fa5fa58df6673134cf9345922c1b789a04388.png" title=" Daniel types 'ENTER' in INPUT OS" width="1295"/>
+                <img src="e4bee5b090c543b5fe6163b064065c087f9627aa524229e1ac86504351eb1afc.png" title=" Daniel types 'ENTER' in INPUT OS (completed)" width="1295"/>
+                <img src="e4bee5b090c543b5fe6163b064065c087f9627aa524229e1ac86504351eb1afc.png" title=" Daniel clicks on DIV OS" width="1295"/>
+                <img src="558073008570ecf273d6cfc1d4db25e973fcf3cda6ad4e48ed067376ea26c8a6.png" title=" Daniel clicks on DIV OS (completed)" width="1295"/>
+                <img src="558073008570ecf273d6cfc1d4db25e973fcf3cda6ad4e48ed067376ea26c8a6.png" title=" Daniel enters 'Android 11' into INPUT OS" width="1295"/>
+                <img src="0d02f4734f506bd396df4fbb95a924039af4708ee2220e8a6b3468666257c4a3.png" title=" Daniel enters 'Android 11' into INPUT OS (completed)" width="1295"/>
+                <img src="0d02f4734f506bd396df4fbb95a924039af4708ee2220e8a6b3468666257c4a3.png" title=" Daniel types 'ARROW_DOWN' in INPUT OS" width="1295"/>
+                <img src="c833ddbc0ec53a01c2d61e02c16b2963c19ff01014c133acedfbbf5ddeed9d48.png" title=" Daniel types 'ARROW_DOWN' in INPUT OS (completed)" width="1295"/>
+                <img src="0d02f4734f506bd396df4fbb95a924039af4708ee2220e8a6b3468666257c4a3.png" title=" Daniel types 'ENTER' in INPUT OS" width="1295"/>
+                <img src="61d8926dd9e354e8de29e7149bce59dc43e1c11edf70044d1b06ab732afd4bf3.png" title=" Daniel types 'ENTER' in INPUT OS (completed)" width="1295"/>
+                <img src="61d8926dd9e354e8de29e7149bce59dc43e1c11edf70044d1b06ab732afd4bf3.png" title=" Daniel clicks on Btn siguiente" width="1295"/>
+                <img src="454fc1c68c74243e585dee8a93616fcfb12e175b34461ea7580303858a7f20b9.png" title=" Daniel clicks on Btn siguiente (completed)" width="1295"/>
+                <img src="454fc1c68c74243e585dee8a93616fcfb12e175b34461ea7580303858a7f20b9.png" title=" Daniel fill out devices data (completed)" width="1295"/>
+                <img src="ce4241994b640dc8d27f231a47d9d66ffd70c185898236adb783bbcfeac43602.png" title=" Daniel fill out security data" width="1295"/>
+                <img src="bd3f15549d14062ba07e10d756f6a69182ddd160dc2cd29dbb6faa9d52fd0824.png" title=" Daniel enters 'bGi9h*iDG9yP' into Input password" width="1295"/>
+                <img src="ae77b10ab47a8e405e4f4b9128f415eb6e29f0f74237adfcb3d93f05cc0982dd.png" title=" Daniel enters 'bGi9h*iDG9yP' into Input password (completed)" width="1295"/>
+                <img src="ae77b10ab47a8e405e4f4b9128f415eb6e29f0f74237adfcb3d93f05cc0982dd.png" title=" Daniel enters 'bGi9h*iDG9yP' into Input password confirm" width="1295"/>
+                <img src="b89f384f78fec75406b076ef608362b868fb006745374eb6279917fffeab9b90.png" title=" Daniel enters 'bGi9h*iDG9yP' into Input password confirm (completed)" width="1295"/>
+                <img src="b89f384f78fec75406b076ef608362b868fb006745374eb6279917fffeab9b90.png" title=" Daniel clicks on checkbox stay informed" width="1295"/>
+                <img src="c6576f6fd4c97a3b90a00dfdf8a394385803aeeecc5f4a5746699052e0c3b888.png" title=" Daniel clicks on checkbox stay informed (completed)" width="1295"/>
+                <img src="c6576f6fd4c97a3b90a00dfdf8a394385803aeeecc5f4a5746699052e0c3b888.png" title=" Daniel clicks on checkbox terms of use" width="1295"/>
+                <img src="d43a98c9c19eda9cd46065056476efe595c37c1c781367c2de85d8b44d4f6052.png" title=" Daniel clicks on checkbox terms of use (completed)" width="1295"/>
+                <img src="d43a98c9c19eda9cd46065056476efe595c37c1c781367c2de85d8b44d4f6052.png" title=" Daniel clicks on checkbox privacy security policy" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" Daniel clicks on checkbox privacy security policy (completed)" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" Daniel fill out security data (completed)" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" When enter the information required by the form
+| strFirstName | strLastName | strEmail | strBirthMonth | strBirthDay | strBirthYear | strCity | strZIP | strCountry | strDevComputer | strDevVersion | strDevLanguage | strDevMobile | strDevModel | strDevOs | strPassword | strConfirmPassword |
+| Juan | Caballero | juan223@gnx.com | July | 19 | 1990 | Panama City | 507 | Panama | Windows | Windows 10 Home | Spanish | Samsung | Galaxy S10 5G | Android 11 | bGi9h*iDG9yP | bGi9h*iDG9yP | (completed)" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" Then registration was successful
+| strCheckEndTitle |
+| Complete Setup |" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" Then check record" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" Then check record (completed)" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" Then registration was successful
+| strCheckEndTitle |
+| Complete Setup | (completed)" width="1295"/>
+                <img src="f4bf901a298446ad4f2f511a6db1e4702025849bc87348c13bc2523162f5079c.png" title=" 1: Successfully create a new user ({strFirstName=Juan, strLastName=Caballero, strEmail=juan223@gnx.com, strBirthMonth=July, strBirthDay=19, strBirthYear=1990, strCity=Panama City, strZIP=507, strCountry=Panama, strDevComputer=Windows, strDevVersion=Windows 10 Home, strDevLanguage=Spanish, strDevMobile=Samsung, strDevModel=Galaxy S10 5G, strDevOs=Android 11, strPassword=bGi9h*iDG9yP, strConfirmPassword=bGi9h*iDG9yP, strCheckEndTitle=Complete Setup}) (completed): <span class='success-color'>SUCCESS</span>" width="1295"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.1.13</span>
+</div>
+</body>
+</html>
